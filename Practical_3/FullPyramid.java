@@ -1,17 +1,16 @@
 public class FullPyramid {
     public static void main(String[] args) {
 
-        char[] letters = {'A','B','C','D','E'};
         int rows = 5;
 
-        for (int i = 0; i < rows; i++) {
+        for (int i = rows; i >= 1; i--) {
 
-            for (int space = 0; space < i; space++) {
+            for (int space = 0; space < rows - i; space++) {
                 System.out.print(" ");
             }
 
-            for (int j = 0; j < rows - i; j++) {
-                System.out.print(letters[j] + " ");
+            for (int star = 1; star <= i; star++) {
+                System.out.print("* ");
             }
 
             System.out.println();
