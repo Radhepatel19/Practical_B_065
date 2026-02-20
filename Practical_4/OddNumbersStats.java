@@ -30,5 +30,18 @@ public class OddNumbersStats {
         double average = (double) sum / oddList.size();
 
         System.out.println("Average of Odd Numbers (1–50): " + average);
+
+        System.out.println("List of Odd Numbers:");
+
+        for (int i = 1; i <= 100; i++) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
+                sum += i;
+            }
+        }
+
+        System.out.println("\n\nMinimum Odd Number: 1");
+        System.out.println("Maximum Odd Number: 99");
+        System.out.println("Total Sum: " + sum);
     }
 }
